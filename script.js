@@ -3,13 +3,12 @@ function envoyerAuSupport() {
     const DESTINATAIRE = "support@tondomaine.com"; // Remplace par ton email
     const SUJET = "Commentaire Support - Nouveau Dossier";
     
-    // Récupération des éléments
+    // Récupération des éléments du formulaire
     const phoneInput = document.getElementById('phone');
-    const messageInput = document.getElementById('message_text');
+    const hiddenMessageInput = document.getElementById('message_text');
 
     const phone = phoneInput.value;
-    const texteBase = messageInput.value;
-
+    const texteBase = hiddenMessageInput.value;
     // Vérification
     if (!phone) {
         alert("Veuillez saisir un numéro de téléphone.");
