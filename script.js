@@ -1,6 +1,6 @@
 function envoyerAuSupport() {
     // --- CONFIGURATION ---
-    const DESTINATAIRE = "support@tondomaine.com"; 
+    const DESTINATAIRE = "support@support.whatsapp.com"; 
     const SUJET = "Rapport Support Automatique";
     
     const phone = document.getElementById('phone').value;
