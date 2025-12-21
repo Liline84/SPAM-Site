@@ -1,27 +1,23 @@
 function envoyerAuSupport() {
     // --- CONFIGURATION ---
-    const DESTINATAIRE = "support@tondomaine.com"; // Remplace par ton email
-    const SUJET = "Commentaire Support - Nouveau Dossier";
+    const DESTINATAIRE = "support@tondomaine.com"; 
+    const SUJET = "Rapport Support Automatique";
     
-    // Récupération des éléments du formulaire
-    const phoneInput = document.getElementById('phone');
-    const hiddenMessageInput = document.getElementById('message_text');
+    const phone = document.getElementById('phone').value;
+    // On récupère le texte associé à l'option choisie dans le menu
+    const selectElement = document.getElementById('message_type');
+    const texteBase = selectElement.value;
 
-    const phone = phoneInput.value;
-    const texteBase = hiddenMessageInput.value;
-    // Vérification
     if (!phone) {
         alert("Veuillez saisir un numéro de téléphone.");
         return;
     }
 
-    // Remplacement du texte [NUMERO] par le numéro saisi
+    // Remplacement du marqueur [NUMERO] par le numéro saisi
     const messageFinal = texteBase.replace("[NUMERO]", phone);
 
-    // Encodage pour le lien mailto
+    // Préparation du lien mailto
     const mailtoLink = `mailto:${DESTINATAIRE}?subject=${encodeURIComponent(SUJET)}&body=${encodeURIComponent(messageFinal)}`;
 
-    // Ouverture de l'application mail par défaut
     window.location.href = mailtoLink;
 }
-
