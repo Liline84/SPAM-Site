@@ -49,16 +49,45 @@ input, textarea {
 
 select {
     width: 100%;
-    padding: 14px;
+    padding: 14px 16px;
     margin-bottom: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid #334155;
-    background: #0f172a;
+    border-radius: 12px;
+    border: 2px solid #334155; /* Bordure discrète */
+    background-color: #1e293b; /* Un peu plus clair que le fond */
     color: #f8fafc;
     font-size: 1rem;
+    font-family: inherit;
     cursor: pointer;
-    appearance: none; /* Enlève le style par défaut du navigateur */
+    outline: none;
+    transition: all 0.2s ease;
+    
+    /* Pour supprimer l'apparence par défaut et ajouter une flèche personnalisée */
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2338bdf8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
 }
+
+/* Effet quand on passe la souris */
+select:hover {
+    border-color: #38bdf8; /* La bordure devient bleue */
+    background-color: #263349;
+}
+
+/* Effet quand on clique dessus */
+select:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
+}
+
+/* Style des options (limité par le navigateur, mais aide à la lisibilité) */
+option {
+    background-color: #1e293b;
+    color: white;
+    padding: 10px;
+}
+
 
 select:focus {
     outline: 2px solid #0ea5e9;
