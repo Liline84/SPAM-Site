@@ -1,7 +1,6 @@
 function envoyerAuSupport() {
     // --- CONFIGURATION ---
     const DESTINATAIRE = "support@support.whatsapp.com"; 
-    const SUJET = "Rapport Support Automatique";
     
     const phone = document.getElementById('phone').value;
     // On récupère le texte associé à l'option choisie dans le menu
@@ -17,7 +16,7 @@ function envoyerAuSupport() {
     const messageFinal = texteBase.replaceAll("[NUMERO]", phone);
 
     // Préparation du lien mailto
-    const mailtoLink = `mailto:${DESTINATAIRE}?subject=${encodeURIComponent(SUJET)}&body=${encodeURIComponent(messageFinal)}`;
+    const mailtoLink = `mailto:${DESTINATAIRE}&body=${encodeURIComponent(messageFinal)}`;
 
     window.location.href = mailtoLink;
 }
