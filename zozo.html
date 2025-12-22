@@ -1,0 +1,101 @@
+from kivymd.app import MDApp
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.button import MDRaisedButton, MDFlatButton
+from kivymd.uix.textfield import MDTextField
+from kivymd.uix.dialog import MDDialog
+from kivymd.uix.menu import MDDropdownMenu
+from kivy.uix.image import Image
+from kivy.metrics import dp
+
+class StormBanApp(MDApp):
+    def build(self):
+        self.theme_cls.primary_palette = "Green"
+        self.theme_cls.theme_style = "Dark" # Pour un look moderne
+        screen = MDScreen()
+
+        # 1. Fond d'écran
+        self.bg = Image(source='bg.jpg', allow_stretch=True, keep_ratio=False)
+        screen.add_widget(self.bg)
+
+        # 2. Sélecteur de Pays (Comme WhatsApp)
+        self.country_field = MDTextField(
+            hint_text="Choisir le pays",
+            text="Gabon", # Par défaut
+            pos_hint={"center_x": 0.5, "center_y": 0.7},
+            size_hint_x=0.6,
+            readonly=True,
+            on_focus=self.open_menu
+        )
+        screen.add_widget(self.country_field)
+
+        # 3. Code et Numéro
+        self.input_code = MDTextField(
+            text="+241",
+            pos_hint={"center_x": 0.3, "center_y": 0.6},
+            size_hint_x=0.15,
+            readonly=True
+        )
+        self.input_num = MDTextField(
+            hint_text="numéro de téléphone",
+            pos_hint={"center_x": 0.6, "center_y": 0.6},
+            size_hint_x=0.4,
+            input_filter="int"
+        )
+        screen.add_widget(self.input_code)
+        screen.add_widget(self.input_num)
+
+        # 4. Bouton NEXT
+        btn = MDRaisedButton(
+            text="NEXT",
+            pos_hint={"center_x": 0.5, "center_y": 0.45},
+            md_bg_color=(0, 0.5, 0.2, 1), # Vert WhatsApp
+            on_release=self.show_ban_message
+        )
+        screen.add_widget(btn)
+
+        # Configuration du Menu Déroulant
+        countries = [
+            {"code": "+241", "name": "Gabon"},
+            {"code": "+33", "name": "France"},
+            {"code": "+225", "name": "Côte d'Ivoire"},
+            {"code": "+237", "name": "Cameroun"},
+            {"code": "+212", "name": "Maroc"}
+        ]
+        
+        menu_items = [
+            {
+                "viewclass": "OneLineListItem",
+                "text": f"{c['name']} ({c['code']})",
+                "on_release": lambda x=c: self.set_country(x),
+            } for c in countries
+        ]
+        self.menu = MDDropdownMenu(
+            caller=self.country_field,
+            items=menu_items,
+            width_mult=4,
+        )
+
+        return screen
+
+    def open_menu(self, instance, value):
+        if value:
+            self.menu.open()
+
+    def set_country(self, country_data):
+        self.country_field.text = country_data['name']
+        self.input_code.text = country_data['code']
+        self.menu.dismiss()
+
+    def show_ban_message(self, *args):
+        num_complet = f"{self.input_code.text} {self.input_num.text}"
+        self.dialog = MDDialog(
+            title=num_complet,
+            text="Ce numéro ne peut plus utilisé WhatsApp pour cause d'insolence 🚫\n\nVeuillez contacter le Dr. Blood Angel 🔥",
+            buttons=[
+                MDFlatButton(text="CANCEL", text_color=(0, 0.5, 0.2, 1)),
+                MDFlatButton(text="SUPORTE", text_color=(0, 0.5, 0.2, 1)),
+            ],
+        )
+        self.dialog.open()
+
+StormBanApp().run()
