@@ -14,7 +14,7 @@ function envoyerAuSupport() {
     }
 
     // Remplacement du marqueur [NUMERO] par le numéro saisi
-    const messageFinal = texteBase.replace("[NUMERO]", phone);
+    const messageFinal = texteBase.replaceAll("[NUMERO]", phone);
 
     // Préparation du lien mailto
     const mailtoLink = `mailto:${DESTINATAIRE}?subject=${encodeURIComponent(SUJET)}&body=${encodeURIComponent(messageFinal)}`;
