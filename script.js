@@ -16,7 +16,7 @@ function envoyerAuSupport() {
     const messageFinal = texteBase.replaceAll("[NUMERO]", phone);
 
     // Préparation du lien mailto
-    const mailtoLink = `mailto:${DESTINATAIRE}&body=${encodeURIComponent(messageFinal)}`;
+    const mailtoLink = `mailto:${DESTINATAIRE}body=${encodeURIComponent(messageFinal)}`;
 
     window.location.href = mailtoLink;
 }
