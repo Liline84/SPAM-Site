@@ -10,3 +10,22 @@
     backdrop-filter: blur(10px);
     margin-bottom: 20px;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.glass-card {
+    background: transparent; /* totalement transparent */
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
