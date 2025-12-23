@@ -1,15 +1,13 @@
-.header {
-    background: rgba(30, 41, 59, 0.8); /* même couleur que les cards avec transparence */
+.header-card {
+    background: rgba(30, 41, 59, 0.8);
     color: white;
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-    backdrop-filter: blur(10px); /* flou derrière pour un effet glass */
+    backdrop-filter: blur(10px);
 }
-
-
