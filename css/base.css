@@ -1,8 +1,9 @@
 body {
     /* Remplace l'URL par le nom de ton fichier ou un lien internet */
-    background-image:url('images/bg.jpg'); 
+    background-image: url('../images/bg.jpg'); 
     background-size: cover;
     background-position: center;
+    background-repeat: no repeat;
     background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
