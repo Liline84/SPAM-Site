@@ -1,1 +1,17 @@
+/* Smartphones */
+@media (max-width: 480px) {
+    body { padding: 10px; }
+    .card { width: 95%; padding: 1.5rem; border-radius: 1rem; }
+    input, textarea, select, button { font-size: 0.95rem; padding: 12px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+}
+
+/* Tablettes */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .card { width: 80%; padding: 2rem; border-radius: 1.3rem; }
+    input, textarea, select, button { font-size: 1rem; padding: 14px; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+}
 
