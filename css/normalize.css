@@ -1,9 +1,3 @@
-C’est normal que `normalize.css` soit vide *si tu ne l’as pas encore rempli*. Mais son but est important : il sert à *uniformiser l’affichage entre navigateurs*.
-
-Voici un contenu de base pour `normalize.css` que tu peux copier :
-
-```css
-/* normalize.css – pour rendre le style cohérent sur tous les navigateurs */
 html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%;
@@ -37,12 +31,3 @@ input {
   font-size: 100%;
   margin: 0;
 }
-```
-
-Et ensuite dans ton HTML principal (`index.html`), assure-toi que tu le lies bien :
-
-```html
-<link rel="stylesheet" href="CSS/normalize.css" />
-```
-
-Tu veux que je t’aide à remplir le `normalize.css` plus complet ou à l'adapter à ton projet ?
