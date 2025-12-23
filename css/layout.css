@@ -6,7 +6,7 @@
     max-width: 420px;
     text-align: center;
     color: white;
-    background: rgba(30, 41, 59, 0.8);
+    background: transparent;
     backdrop-filter: blur(10px);
     margin-bottom: 20px;
 }
