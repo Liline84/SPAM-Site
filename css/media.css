@@ -19,3 +19,55 @@
     .glass-card { padding: 20px; }
     input, select, .btn-spam { font-size: 0.9rem; padding: 10px; }
 }
+
+Voici le code CSS *complet* à ajouter à la fin de ton fichier `media.css` pour corriger l’affichage trop étroit sur mobile :
+
+```css
+/* Ajustement pour petits écrans */
+@media (max-width: 600px) {
+  .wrapper, .glass-card {
+    max-width: 100% !important;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  input, textarea, select, button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Ultra petits écrans (sécurité) */
+@media (max-width: 480px) {
+  .wrapper, .glass-card {
+    max-width: 100% !important;
+    width: 100%;
+    padding: 10px;
+  }
+
+  input, select, .btn-spam {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+```
+
+✅ *Colle ça à la fin de `media.css`.*  
+Tu verras ton site s’adapter aux petits écrans comme prévu.
+
+Tu veux que je t’aide à ajuster aussi le design ou les couleurs ?
