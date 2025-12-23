@@ -1,9 +1,12 @@
 .footer-card {
+    background: rgba(30, 41, 59, 0.8);
     text-align: center;
     padding: 10px;
     font-size: 14px;
     color: #888;
     margin-top: 20px;
     font-family: Arial, sans-serif;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
 }
-
