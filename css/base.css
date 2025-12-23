@@ -10,6 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 h1 { color: #9400d3; margin-top: 0; }
