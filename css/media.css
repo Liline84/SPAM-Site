@@ -20,9 +20,6 @@
     input, select, .btn-spam { font-size: 0.9rem; padding: 10px; }
 }
 
-Voici le code CSS *complet* à ajouter à la fin de ton fichier `media.css` pour corriger l’affichage trop étroit sur mobile :
-
-```css
 /* Ajustement pour petits écrans */
 @media (max-width: 600px) {
   .wrapper, .glass-card {
@@ -65,9 +62,3 @@ Voici le code CSS *complet* à ajouter à la fin de ton fichier `media.css` pour
     padding: 10px;
   }
 }
-```
-
-✅ *Colle ça à la fin de `media.css`.*  
-Tu verras ton site s’adapter aux petits écrans comme prévu.
-
-Tu veux que je t’aide à ajuster aussi le design ou les couleurs ?
