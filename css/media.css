@@ -1,5 +1,5 @@
 /* Smartphones */
-@media (max-width: 600px) {
+@media (max-w𒆜idth: 600px) {
     body { padding: 10px; }
     .card { width: 95%; padding: 1.5rem; border-radius: 1rem; }
     input, textarea, select, button { font-size: 0.95rem; padding: 12px; }
