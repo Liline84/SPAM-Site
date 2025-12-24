@@ -17,7 +17,7 @@ input, textarea {
     font-size: 1rem;
 }
 
-textarea { background: #50c878; color: #ffff00; border-style: dashed; }
+textarea { background: transparent; color: #ffff00; border-style: dashed; }
 
 select {
     width: 100%;
@@ -43,7 +43,7 @@ select:hover { border-color: #ffff00; background-color: transparent; }
 select:focus {
     border-color: #0ea5e9;
     box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
-    outline: 2px solid #0ea5e9;
+    outline: 2px solid #000000;
     border-color: #ffff00;
 }
 
