@@ -11,14 +11,14 @@
 
     /* Transparence */
     background: transparent;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     
     /* Rendre le texte visible (Remplace transparent) */
     color: #000000; 
     
     /* Espacement et bordure */
-    padding: 6rem;
+    padding: 2.5rem;
     border-radius: 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.1); /* Optionnel : dessine la carte */
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
