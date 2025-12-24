@@ -11,7 +11,7 @@ input, textarea {
     margin-bottom: 1.5rem;
     border-radius: 10px;
     border: 1px solid #ff0000;
-    background: #0f172a;
+    background: #ff0000;
     color: #9932cc;
     box-sizing: border-box;
     font-size: 1rem;
@@ -64,6 +64,6 @@ input, select {
     margin-top: 8px;
     border-radius: 8px;
     border: none;
-    background: rgba(56, 189, 248, 0.2);
+    background: #ff0000
     color: white;
 }
