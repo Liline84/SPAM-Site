@@ -28,6 +28,7 @@ header h2 { color: #34b7f1; }
     color: white;
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
     cursor: pointer;
     margin-top: 10px;
 }
