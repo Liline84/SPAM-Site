@@ -68,17 +68,17 @@ Assine Bruno🎃 Outras formas de contato no WhatsApp
 
 <script>
 fetch("header.html")
-    .then(res => rest.text())
+    .then(res => res.text())
     .then(data => {
-    document.getElementById("header").innerHTML = data;
-});
-fetch("footer.html")
-    .then(res => rest.text())
-    .then(data => {
-    document.getElementById("footer").innerHTML = data;
-});
-</script>
+        document.getElementById("header").innerHTML = data;
+    });
 
+fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
 <script src="script.js"></script>
 </body>
 </html>
