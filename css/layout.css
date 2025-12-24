@@ -5,7 +5,7 @@
     width: 90%;
     max-width: 420px;
     text-align: center;
-    color: #fff;
+    color: transparent;
     background: transparent;
     backdrop-filter: blur(10px);
     margin-bottom: 20px;
@@ -21,7 +21,7 @@
 
 .glass-card {
     background: transparent; /* totalement transparent */
-    color: #fff;
+    color: transparent;
     padding: 40px;
     border-radius: 20px;
     width: 100%;
