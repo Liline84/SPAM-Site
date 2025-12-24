@@ -1,5 +1,4 @@
 body {
-    /* Remplace l'URL par le nom de ton fichier ou un lien internet */
     background-image: url('../images/bg.jpg'); 
     background-size: cover;
     background-position: center;
@@ -11,6 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    width: 100%;
     padding: 0;
 }
 
