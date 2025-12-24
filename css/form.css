@@ -39,7 +39,7 @@ select {
     background-size: 18px;
 }
 
-select:hover { border-color: #ffff00; background-color: #263349; }
+select:hover { border-color: #ffff00; background-color: #ffff00; }
 select:focus {
     border-color: #0ea5e9;
     box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
