@@ -1,6 +1,5 @@
 .card, .glass-card {
     display: block;
-    /* On force le centrage par les marges */
     margin-left: auto !important;
     margin-right: auto !important;
     
@@ -30,7 +29,7 @@
     flex-direction: column;
     align-items: center;      /* Centre horizontalement */
     justify-content: center;   /* Centre verticalement */
-    gap: 25px;
+    gap: 20px;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
