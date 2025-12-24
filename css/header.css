@@ -11,3 +11,12 @@
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
 }
+
+#header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 28px; /* Taille différente du h1 principal */
+    font-weight: bold;
+    margin: 0;
+    color: white; /* Tu peux mettre une couleur différente ici (ex: gold) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
