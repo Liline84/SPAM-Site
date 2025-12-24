@@ -64,6 +64,6 @@ input, select {
     margin-top: 8px;
     border-radius: 8px;
     border: none;
-    background: transparent;
+    background: rgba(56, 189, 248, 0.2);
     color: white;
 }
