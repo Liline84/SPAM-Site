@@ -1,38 +1,50 @@
-.card, .glass-card {
-    display: block;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    
-    /* On harmonise la largeur */
-    width: 95%;
-    max-width: 990px;
-    box-sizing: border-box; /* IMPORTANT : empêche le padding de décentrer */
-
-    /* Transparence */
-    background: transparent;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
-    
-    /* Rendre le texte visible (Remplace transparent) */
-    color: #000000; 
-    
-    /* Espacement et bordure */
-    padding: 2.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Optionnel : dessine la carte */
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-    text-align: center;
+/* --- LE CONTENEUR PRINCIPAL --- */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centre les cartes horizontalement */
+    justify-content: flex-start; /* Aligne vers le haut pour le scroll mobile */
+    gap: 20px;                /* Espace entre les 3 cartes */
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 10px;       /* Un peu d'espace en haut/bas et sur les côtés */
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* Centre horizontalement */
-    justify-content: center;   /* Centre verticalement */
-    gap: 20px;
-    width: 100%;
-    min-height: 100vh;
-    padding: 20px;
-    margin: 0 auto;
-    box-sizing: border-box;
+/* --- LA CARTE UNIQUE (Header, Main, Footer) --- */
+.card {
+    display: block;
+    width: 95%;               /* Prend presque toute la largeur sur mobile */
+    max-width: 990px;         /* Limite sur ordinateur */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+
+    /* Style Transparent & Flou */
+    background: rgba(255, 255, 255, 0.05); /* Très légère teinte pour aider la lecture */
+    backdrop-filter: blur(10px);          /* Flou plus prononcé pour l'élégance */
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Texte */
+    color: #000000;
+    text-align: center;
+    
+    /* Espacement (Adapté mobile) */
+    padding: 1.5rem;          /* Réduit de 2.5rem à 1.5rem pour gagner de la place */
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* --- SUPPRESSION DE LA SOUS-CARTE FLOU --- */
+/* On rend la glass-card invisible pour ne pas qu'elle gène les 3 autres */
+.glass-card {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100%;
+    display: contents; /* Permet aux cartes enfants de se comporter normalement dans le wrapper */
 }
