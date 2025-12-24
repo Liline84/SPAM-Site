@@ -9,10 +9,11 @@
     border-radius: 1.5rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-    backdrop-filter: blur(10px);
+    margin: 0 auto 20px auto;
+    backdrop-filter: blur(1px);
 }
 
-#header h1 {
+.header-title {
     font-family: Arial, sans-serif;
     font-size: 35px; /* Taille différente du h1 principal */
     font-weight: bold;
