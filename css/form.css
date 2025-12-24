@@ -50,7 +50,7 @@ select:focus {
 option {
     width: 100%
     background-color: #000000;
-    color: white;
+    color: transparent;
     border: 2px solid #ffff00;
     padding: 10px;
 }
