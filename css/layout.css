@@ -6,7 +6,7 @@
     
     /* On harmonise la largeur */
     width: 95%;
-    max-width: 999px;
+    max-width: 990px;
     box-sizing: border-box; /* IMPORTANT : empêche le padding de décentrer */
 
     /* Transparence */
