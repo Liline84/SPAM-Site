@@ -1,4 +1,8 @@
-label { display: block; text-align: left; font-size: 0.85rem; margin-bottom: 8px; color: #cbd5e1; }
+label { display: block; 
+       text-align: left; 
+       font-size: 0.85rem; 
+       margin-bottom: 8px; 
+       color: #cbd5e1; }
 input, textarea {
     width: 100%;
     padding: 14px;
@@ -6,7 +10,7 @@ input, textarea {
     border-radius: 10px;
     border: 1px solid #334155;
     background: #0f172a;
-    color: #f8fafc;
+    color: #9932cc;
     box-sizing: border-box;
     font-size: 1rem;
 }
