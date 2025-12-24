@@ -1,12 +1,29 @@
-.footer-card {
+#footer.footer-card {
     background: transparent;
     text-align: center;
-    padding: 10px;
+    padding: 15px;         /* Un peu plus d'espace pour le confort visuel */
     font-size: 14px;
-    color: #888;
-    margin-top: 20px;
+    color: #000000;        /* Texte noir pour rester cohérent avec le corps */
+    
+    width: 95%;            /* Même largeur que les autres cartes */
+    max-width: 990px;
+    margin: 20px auto;     /* Centré avec espace au-dessus */
+    
     font-family: Arial, sans-serif;
     border-radius: 1.5rem;
-    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5);
-    backdrop-filter: blur(1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre plus légère pour le bas */
+    
+    /* On augmente le flou pour l'élégance */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Si tu as des liens dans ton footer */
+#footer a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
 }
