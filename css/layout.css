@@ -5,7 +5,7 @@
     margin-right: auto !important;
     
     /* On harmonise la largeur */
-    width: 100%;
+    width: 95%;
     max-width: 650px;
     box-sizing: border-box; /* IMPORTANT : empêche le padding de décentrer */
 
@@ -15,7 +15,7 @@
     -webkit-backdrop-filter: blur(2px);
     
     /* Rendre le texte visible (Remplace transparent) */
-    color: #ffffff; 
+    color: #000000; 
     
     /* Espacement et bordure */
     padding: 2.5rem;
