@@ -1,42 +1,42 @@
-button {
-    width: 190px;
+/* --- BOUTON PRINCIPAL (SPAM) --- */
+button, .btn-spam {
+    width: 100%;             /* Prend toute la largeur sur mobile */
+    max-width: 280px;        /* Ne devient pas trop géant sur tablette */
     height: 60px;
     padding: 16px;
     background: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%);
     color: white;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
+    border-radius: 12px;     /* Légèrement plus arrondi pour le look moderne */
+    box-shadow: 0 10px 20px rgba(217, 70, 239, 0.4);
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: transform 0.1s, background 0.2s;
+    transition: all 0.2s ease;
+    display: block;
+    margin: 20px auto;       /* Centrage automatique dans la carte */
 }
 
-button:hover { background: #0284c7; transform: translateY(-2px); }
-button:active { transform: translateY(0); }
-
-#info { margin-top: 1.5rem; font-size: 0.75rem; color: #475569; }
-
-header h1 { color: #d015ff; margin-bottom: 10px; }
-header h2 { color: #34b7f1; }
-
-.btn-spam {
-    width: 220px;
-    height: 50px;
-    padding: 15px;
-    background: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%);
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
-    cursor: pointer;
-    margin-top: 10px;
+/* --- EFFETS --- */
+button:hover, .btn-spam:hover { 
+    background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%); /* Inversion au survol */
+    transform: translateY(-2px); 
+    box-shadow: 0 15px 25px rgba(217, 70, 239, 0.6);
 }
 
-footer {
-    margin-top: 30px;
-    font-size: 0.8rem;
-    opacity: 0.6;
+button:active, .btn-spam:active { 
+    transform: translateY(0); 
+    filter: brightness(0.9);
 }
+
+/* --- ZONE D'INFORMATION --- */
+#info { 
+    margin-top: 1.5rem; 
+    font-size: 0.8rem; 
+    color: #000000; /* Passé en noir pour la lisibilité sur fond transparent */
+    text-align: center;
+    font-weight: 500;
+}
+
+/* --- NETTOYAGE DES DOUBLONS --- */
+/* On supprime les styles header/footer d'ici car ils sont déjà dans header.css et footer.css */
