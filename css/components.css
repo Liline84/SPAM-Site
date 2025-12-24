@@ -20,13 +20,14 @@ header h1 { color: #d015ff; margin-bottom: 10px; }
 header h2 { color: #34b7f1; }
 
 .btn-spam {
-    width: 100%;
+    width: 220px;
+    height: 50px;
     padding: 15px;
-    background: #00a8ff;
+    background: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%);
     border: none;
     color: white;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
 }
