@@ -10,8 +10,8 @@ input, textarea {
     padding: 14px;
     margin-bottom: 1.5rem;
     border-radius: 10px;
-    border: 1px solid #008000;
-    background: #36454F;
+    border: 1px solid #ffff00;
+    background: transparent;
     color: #9932cc;
     box-sizing: border-box;
     font-size: 1rem;
