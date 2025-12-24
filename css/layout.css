@@ -1,42 +1,39 @@
-.card {
-    display: block;        /* On s'assure que c'est un bloc */
+.card, .glass-card {
+    display: block;
+    /* On force le centrage par les marges */
     margin-left: auto !important;
     margin-right: auto !important;
-    border-radius: 1.5rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-    padding: 2rem;
+    
+    /* On harmonise la largeur */
     width: 90%;
     max-width: 420px;
-    text-align: center;
-    color: transparent;
+    box-sizing: border-box; /* IMPORTANT : empêche le padding de décentrer */
+
+    /* Transparence */
     background: transparent;
     backdrop-filter: blur(2px);
-    margin-bottom: 0px;
+    -webkit-backdrop-filter: blur(2px);
+    
+    /* Rendre le texte visible (Remplace transparent) */
+    color: #ffffff; 
+    
+    /* Espacement et bordure */
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Optionnel : dessine la carte */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px; /* C'est ça qui crée l'espace entre les 3 cartes */
-    align-items: center;
+    align-items: center;      /* Centre horizontalement */
+    justify-content: center;   /* Centre verticalement */
+    gap: 20px;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
     margin: 0 auto;
-}
-
-.glass-card {
-    display: block;        /* On s'assure que c'est un bloc */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    background: transparent; /* totalement transparent */
-    color: transparent;
-    padding: 40px;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 420px;
-    text-align: center;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
+    box-sizing: border-box;
 }
