@@ -48,8 +48,10 @@ select:focus {
 }
 
 option {
-    background-color: #ffff00;
+    width: 100%
+    background-color: #000000;
     color: white;
+    border: 2px solid #ffff00;
     padding: 10px;
 }
 
