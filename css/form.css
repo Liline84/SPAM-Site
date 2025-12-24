@@ -17,7 +17,7 @@ input, textarea {
     font-size: 1rem;
 }
 
-textarea { background: #50c878; color: #fff; border-style: dashed; }
+textarea { background: #50c878; color: #ffff00; border-style: dashed; }
 
 select {
     width: 100%;
