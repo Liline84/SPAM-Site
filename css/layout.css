@@ -1,4 +1,7 @@
 .card {
+    display: block;        /* On s'assure que c'est un bloc */
+    margin-left: auto !important;
+    margin-right: auto !important;
     border-radius: 1.5rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
     padding: 2rem;
@@ -24,6 +27,9 @@
 }
 
 .glass-card {
+    display: block;        /* On s'assure que c'est un bloc */
+    margin-left: auto !important;
+    margin-right: auto !important;
     background: transparent; /* totalement transparent */
     color: transparent;
     padding: 40px;
