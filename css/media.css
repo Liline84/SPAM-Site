@@ -1,64 +1,65 @@
-/* Smartphones */
-@media (max-width: 600px) {
-    body { padding: 10px; }
-    .card { width: 95%; padding: 1.5rem; border-radius: 1rem; }
-    input, textarea, select, button { font-size: 0.95rem; padding: 12px; }
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.2rem; }
-}
-
-/* Tablettes */
+/* --- 1. TABLETTES (Entre 481px et 1024px) --- */
 @media (min-width: 481px) and (max-width: 1024px) {
-    .card { width: 80%; padding: 2rem; border-radius: 1.3rem; }
-    input, textarea, select, button { font-size: 1rem; padding: 14px; }
+    .card, #header.header-card, #footer.footer-card { 
+        width: 85%; 
+        padding: 2rem; 
+    }
+    
     h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
 }
 
-@media (max-width: 480px) {
-    .glass-card { padding: 20px; }
-    input, select, .btn-spam { font-size: 0.9rem; padding: 10px; }
-}
-
-/* Ajustement pour petits écrans */
+/* --- 2. SMARTPHONES STANDARDS (Max 600px) --- */
 @media (max-width: 600px) {
-  .wrapper, .glass-card {
-    max-width: 100% !important;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-  }
+    body { 
+        padding: 0; /* On laisse le wrapper gérer l'espace */
+    }
 
-  .card {
-    width: 95%;
-    padding: 1.5rem;
-    border-radius: 1rem;
-  }
+    .wrapper {
+        padding: 15px 5px; /* Espace minimum pour ne pas toucher les bords */
+    }
 
-  input, textarea, select, button {
-    font-size: 0.95rem;
-    padding: 12px;
-  }
+    .card, #header.header-card, #footer.footer-card {
+        width: 95%; /* La carte occupe presque tout l'écran */
+        padding: 1.2rem;
+        border-radius: 1rem;
+        margin-bottom: 15px;
+    }
 
-  h1 {
-    font-size: 1.5rem;
-  }
+    /* On garde 16px pour les inputs même ici pour éviter le zoom iOS */
+    input, textarea, select {
+        font-size: 16px !important; 
+        padding: 12px;
+    }
 
-  h2 {
-    font-size: 1.2rem;
-  }
+    .btn-spam {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.3rem; }
 }
 
-/* Ultra petits écrans (sécurité) */
-@media (max-width: 480px) {
-  .wrapper, .glass-card {
-    max-width: 100% !important;
-    width: 100%;
-    padding: 10px;
-  }
+/* --- 3. ULTRA PETITS ÉCRANS (Max 380px) --- */
+@media (max-width: 380px) {
+    .header-title {
+        font-size: 1.3rem; /* On réduit le titre pour qu'il tienne sur une ligne */
+    }
 
-  input, select, .btn-spam {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
+    .card {
+        padding: 1rem;
+    }
+    
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+/* --- 4. SÉCURITÉ POUR L'ORDINATEUR (> 1025px) --- */
+/* Si quelqu'un ouvre le site sur PC, on limite la largeur pour que ce soit beau */
+@media (min-width: 1025px) {
+    .card, #header.header-card, #footer.footer-card {
+        width: 60%;
+        max-width: 990px;
+    }
 }
