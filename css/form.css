@@ -1,8 +1,9 @@
-label { display: block; 
+label { 
+       display: block; 
        text-align: left; 
        font-size: 0.85rem; 
        margin-bottom: 8px; 
-       color: #9932cc; }
+       color: #fff; }
 input, textarea {
     width: 100%;
     padding: 14px;
