@@ -23,8 +23,8 @@
 
     /* Style Transparent & Flou */
     background: rgba(255, 255, 255, 0.05); /* Très légère teinte pour aider la lecture */
-    backdrop-filter: blur(10px);          /* Flou plus prononcé pour l'élégance */
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);          /* Flou plus prononcé pour l'élégance */
+    -webkit-backdrop-filter: blur(2px);
     
     /* Texte */
     color: #000000;
