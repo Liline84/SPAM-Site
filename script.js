@@ -13,8 +13,8 @@ function envoyerAuSupport() {
     }
 
     const messageFinal = texteBase.replaceAll("[NUMERO]", phone);
+    const mailtoLink = `mailto:${DESTINATAIRE}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(messageFinal)}`;
 
-    const mailtoLink = `mailto:DESTINATAIRE?subject={encodeURIComponent(sujet)}&body=encodeURIComponent(messageFinal)`;
 
     window.location.href = mailtoLink;
 }
