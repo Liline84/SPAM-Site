@@ -1,6 +1,6 @@
 function envoyerAuSupport() {
     // --- CONFIGURATION ---
-    const DESTINATAIRE = "support@support.whatsapp.com"; 
+    const DESTINATAIRE = "support@whatsapp.com"; 
     const sujet = "Urgent – Signalement d’un compte diffusant du contenu illégal sur WhatsApp";
     const phone = document.getElementById('phone').value;
 
